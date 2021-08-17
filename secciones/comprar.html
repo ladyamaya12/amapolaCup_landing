@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprar</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <div class="navbar__Logobox">
+                <img class="navbar__Logoimg" src="../archivos/logoama.png" alt="logo" />
+            </div>
+            <nav>
+                <ul class="navbar__List">
+                    <li class="navbarlistlinks" ><a href="/index.html">inicio</a></li>
+                    <li class="navbarlistlinks"><a href="eligetucopa.html">eligetucopa</a></li>
+                    <li class="navbarlistlinks"><a href="comoseutiliza.html">comoseutiliza</a</li>
+                    <li class="navbarlistlinks"><a href="productos.html">productos</a</li>
+                    <li class="navbarlistlinks"><a href="comprar.html">comprar</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+    <p class="box__Uno">informacion de cliente</p>
+
+    <form action="procesar.php" method="post">
+        <input type="email" name="correo" placeholder="correo electronico">
+    </form>
+
+    <div>
+        <h2 class="box__Uno">forma de entrega</h2>
+           <img src="" alt="icono envios">
+               <form action="" method="post">
+                      <input type="checkbox" name="enviar" placeholder="enviar">
+             </form>
+                     <img src="" alt="icono retiro">
+              <form action="" method="post">
+                      <input type="checkbox" name="enviar" placeholder="enviar">
+
+             </form>
+
+
+    </div>
+    <div>
+        <p>direccion de envio</p>
+        <form action="procesar.php" method="post">
+            <input type="text" name="nombre" placeholder="ingresa tu nombre">
+            <input type="text" name="apellido" placeholder="ingresa tu apellido">
+        </form>
+    </div>
+
+    <div>
+
+        <form action="procesar.php" method="post">
+            <input type="text" name="calle y numero" placeholder="calle y numero">
+            <input type="text" name="departamnti" placeholder="departamento">
+        </form>
+    </div>
+
+    <div>
+
+        <form action="procesar.php" method="post">
+            <input type="text" name="codigo postal" placeholder="codigo postal">
+            <input type="text" name="cuidad" placeholder="ciudad">
+            <input type="number" name="numero" placeholder="telefono">
+        </form>
+    </div>
+
+
+<h3  class="box__Uno" id="compra "> esta es tu compra</h3>
+
+<section>
+    <article>
+        <img src="../archivos/copanumero1.png" alt="mi producto">
+        <p>total $xxx</p>
+    
+   </article>
+</section>
+
+<div>
+    <textarea name="comentario" placeholder="espesificacion de entrega" cols="30" rows="10"></textarea>
+    <input type="submit" value="continuar compra">
+</div>
+
+<footer id="footer">
+    <div>
+        <h2>
+            amapolacup
+        </h2>
+        <p>
+            VIVE LA VIDA PLENA, COMODA Y SEGURA
+        </p>
+        <img src="#" alt="gogle maps">
+
+    </div>
+    <div>
+        <h2>contactanos</h2>
+        <img src="" alt="icono facebook">
+        <img src="" alt="icono instagram">
+        <img src="" alt="icono telefono">
+    </div>
+    <div>
+        <h2>
+            la copa mensatrual
+        </h2>
+        <nav>
+            <ul>
+                <li>elige tu copa</li>
+                <li>como se utiliza</li>
+                <li>productos</li>
+
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
