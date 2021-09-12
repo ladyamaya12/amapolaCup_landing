@@ -20,7 +20,7 @@ h2 {
   animation-name: lady;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-duration: 20s;
+  animation-duration: 60s;
   animation-delay: 1s; }
 
 @keyframes lady {
@@ -44,12 +44,15 @@ h2 {
   background-image: linear-gradient(45deg, #837a9e, transparent); }
 
 nav {
-  width: 50vw; }
+  width: 50vw;
+  align-self: center; }
 
 .navbar__List {
   display: flex;
   flex-direction: row;
-  list-style-type: none; }
+  list-style-type: none;
+  justify-content: flex-end;
+  flex-wrap: wrap; }
 
 .navbarlistlinks {
   padding: .5rem; }
@@ -61,7 +64,6 @@ nav {
   justify-content: flex-start; }
 
 .navbar__Logoimg {
-  width: 30%;
   height: auto; }
 
 .mainPortada {
@@ -112,6 +114,9 @@ nav {
   font-family: 'Courgette', cursive;
   background-image: linear-gradient(45deg, #908282, transparent); }
 
+.foter__list {
+  list-style-type: none; }
+
 #flex {
   display: flex;
   flex-direction: row-reverse;
@@ -145,7 +150,9 @@ nav {
 
 .carousel_main {
   width: 100 vw;
-  height: 20%; }
+  height: 20%;
+  width: -webkit-fill-available;
+  height: max-content; }
 
 .box__Uno {
   background-color: pink;
@@ -157,6 +164,42 @@ nav {
   background-color: blueviolet;
   width: 700px; }
 
+.texto {
+  text-transform: uppercase;
+  color: #ba8fc3; }
+
 body, p {
   font-size: 1.2rem;
   text-align: center; }
+
+/* Clases de  utilidades */
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
+@media (max-width: 480px) {
+  .navBar {
+    height: 32vh; }
+  .navbarLogobox {
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    align-self: center; }
+  .navbarList {
+    flex-wrap: wrap; }
+  .footer {
+    flex-direction: column; } }

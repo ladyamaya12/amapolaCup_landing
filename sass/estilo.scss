@@ -2,10 +2,13 @@
 @import '_variables';
 
 body {
-    @extend %font-p;
+    // @extend %font-p;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    // font-family: $font;
     overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: $font;
+  overflow-x: hidden;
+  font-family: "Courgette", cursive; 
 }
 
 
@@ -24,7 +27,7 @@ h2 { color: blueviolet;
     animation-name: lady;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
-    animation-duration: 20s;
+    animation-duration: 60s;
     animation-delay: 1s;
     
 }
@@ -44,26 +47,38 @@ h2 { color: blueviolet;
 }
 
 .navBar {
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // max-width: 100vw;
+    // background-color: #e87373;
+    // width: 100vw;
+    // padding: 0 5rem;
+    // background-image: linear-gradient(
+    //     45deg
+    //     , #837a9e, transparent);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    max-width: 100vw;
-    background-color: #e87373;
-    width: 100vw;
-    padding: 0 5rem;
-    background-image: linear-gradient(
-        45deg
-        , #837a9e, transparent);
+  flex-direction: row;
+  justify-content: center;
+  max-width: 100vw;
+  background-color: #e87373;
+  width: 100vw;
+  padding: 0 5rem;
+  background-image: linear-gradient(45deg, #837a9e, transparent); 
+
 }
 
 nav {
     width: 50vw;
+    align-self: center; 
 }
 
 .navbar__List { 
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: flex-end; 
+    flex-wrap: wrap; 
 }
 
 .navbarlistlinks {
@@ -78,7 +93,7 @@ nav {
 }
 
 .navbar__Logoimg { 
-    width: 30%;
+
     height: auto;
 
 
@@ -148,6 +163,10 @@ nav {
         , #908282, transparent);
 }
 
+.foter__list {
+    list-style-type: none;
+ }
+
 #flex {
     display: flex;
     flex-direction: row-reverse;
@@ -215,32 +234,90 @@ nav {
 .carousel_main {
     width: 100 vw;
     height: 20%;
+    width: -webkit-fill-available;
+    height: max-content;
 }
 
-$ancho: 700px;
-$pink: pink;
-$viloet: blueviolet;
-$margin: top;
+
 
 .box__Uno {
-    background-color: $pink;
-    width: $ancho/2;
+    background-color: pink;
+    width: 350px;
     text-align: center;
-    margin: $margin;
+    margin: top; 
+  
 
 }
 
 .box__Dos {
-    background-color: $viloet;
-    width: $ancho;
+    background-color: blueviolet;
+  width: 700px;
 }
 
 
-%font-p {
-    font-size: $font-p;
-    text-align: center;
+// %font-p {
+//     font-size: $font-p;
+//     text-align: center;
+// }
+
+// p {
+//     @extend %font-p;
+// }
+
+.texto {
+    text-transform: uppercase;
+    color: #ba8fc3;
 }
 
-p {
-    @extend %font-p;
-}
+body, p {
+    font-size: 1.2rem;
+    text-align: center; }
+  
+    /* Clases de  utilidades */
+  
+  .u-center-text {
+    text-align: center; 
+  }
+  
+  .u-margin-bottom-small {
+    margin-bottom: 2rem; 
+  }
+  
+  .u-margin-bottom-medium {
+    margin-bottom: 4rem; 
+  }
+  
+  .u-margin-bottom-big {
+    margin-bottom: 8rem; 
+  }
+  
+  .u-margin-top-big {
+    margin-top: 8rem; 
+  }
+  
+  .u-margin-top-huge {
+    margin-top: 10rem; 
+  }
+  
+  
+  @media (max-width: 480px) {
+    .navBar {
+      height: 32vh;
+    } 
+  
+    .navbarLogobox {
+      height: 20vh;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+    }
+  
+    .navbarList {
+      flex-wrap: wrap;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+  }
