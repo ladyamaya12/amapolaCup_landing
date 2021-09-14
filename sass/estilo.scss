@@ -225,6 +225,7 @@ nav {
 .contenido__Dos {
     display: flex;
     flex-direction: row-reverse
+    
 }
 
 .dato {
@@ -321,6 +322,12 @@ body, p {
     .footer {
       flex-direction: column;
     }
+
+    .borde_submit {
+      display: flex;
+      flex-direction: column;
+      padding: 0 2rem;
+    }
   
   }
 
@@ -330,7 +337,33 @@ body, p {
     background: #ffcdd6
   }
 
+  .borde_submit {
+    border: groove;
+    background: #ffcdd6;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+
+  .borde_submit_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    align-self: center;
+  }
+
+
   .centro {
     width: auto;
 
   }
+
+  .columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: auto;
+  }
+

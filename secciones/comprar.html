@@ -55,29 +55,47 @@
 
     </div>
  <div class="borde">
-        <p class="lola__Uno">direccion de envio</p>
-        <form action="procesar.php" method="post">
-            <input type="text" name="nombre" placeholder="ingresa tu nombre">
-            <input type="text" name="apellido" placeholder="ingresa tu apellido">
-        </form>
+    <p class="lola__Uno">direccion de envio</p>
+    <form action="procesar.php" method="post">
+        <input type="text" name="nombre" placeholder="ingresa tu nombre">
+        <input type="text" name="apellido" placeholder="ingresa tu apellido">
+    </form>
     
-
+    
     <div>
-
+    
         <form action="procesar.php" method="post">
             <input type="text" name="calle y numero" placeholder="calle y numero">
             <input type="text" name="departamnti" placeholder="departamento">
         </form>
     </div>
-
-    <div class="u-margin-bottom-small">
-
+    
+    <div >
         <form action="procesar.php" method="post">
             <input type="text" name="codigo postal" placeholder="codigo postal">
             <input type="text" name="cuidad" placeholder="ciudad">
+        </form>
+    </div>
+    <div class="u-margin-bottom-small">
+        <form action="procesar.php" method="post">
             <input type="number" name="numero" placeholder="telefono">
         </form>
     </div>
+    <!-- <div class="u-margin-bottom-small">
+            
+        <p class="lola__Uno">direccion de envio</p>
+        <form action="procesar.php" method="post" class="form_comprar">
+            <div class="form_comprar_content">
+                <input type="text" name="nombre" placeholder="ingresa tu nombre">
+                <input type="text" name="apellido" placeholder="ingresa tu apellido">
+                <input type="text" name="calle y numero" placeholder="calle y numero">
+                <input type="text" name="departamnti" placeholder="departamento">
+                <input type="text" name="codigo postal" placeholder="codigo postal">
+                <input type="text" name="cuidad" placeholder="ciudad">
+                <input type="number" name="numero" placeholder="telefono">
+            </div>
+        </form>
+    </div> -->
 </div> 
 
 <div class="borde">
@@ -92,9 +110,11 @@
 </section>
 </div>
 
-<div class="borde u-margin-bottom-small">
-    <textarea name="comentario" placeholder="espesificacion de entrega" cols="30" rows="10"></textarea>
-    <input type="submit" value="continuar compra">
+<div class="borde_submit u-margin-bottom-small">
+    <div class="borde_submit_content">
+        <textarea name="comentario" placeholder="espesificacion de entrega" cols="45" rows="10"></textarea>
+        <input type="submit" value="continuar compra">
+    </div>
 </div>
 <footer id="footer"  class="footer">
     <div class="u-margin-bottom-small">
